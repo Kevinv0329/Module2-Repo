@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Future</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Optional: Custom font if 'Inter' isn't loaded by default or preferred */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevent scrollbars if content doesn't fill the height */
+        }
+
+        /* Subtle text shadow for a "cool" glowing effect */
+        .text-glow {
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+        }
+
+        /* Define a subtle animation for the background gradient */
+        @keyframes gradient-shift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .animated-gradient {
+            background-size: 200% 200%;
+            animation: gradient-shift 15s ease infinite; /* 15s duration, smooth, infinite loop */
+        }
+    </style>
+</head>
+<body class="bg-gray-900">
+    <div class="min-h-screen flex items-center justify-center p-4
+                bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900
+                animated-gradient">
+        <div class="text-center text-white space-y-8">
+            <h1 class="text-5xl sm:text-7xl md:text-8xl lg:text-9xl
+                       font-extrabold tracking-tight text-glow">
+                I will be rich
+            </h1>
+            <p class="text-xl sm:text-2xl md:text-3xl lg:text-4xl
+                      font-light text-opacity-80">
+                The universe is awesome
+            </p>
+        </div>
+    </div>
+</body>
+</html>
